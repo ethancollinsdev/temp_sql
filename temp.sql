@@ -38,7 +38,9 @@ INSERT INTO data_services_ethancollins.target_object
 VALUES(530, 1, 'ENT_NFRR_INFO_RISK_METRIC', NULL, 'parquet', NULL, '/user/ethancollins/practice', 'ethancollins_raw_zone', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
 
 
-INSERT INTO data_services_ethancollins.target_object_columns (target_object_id, target_object_col_id, target_column_name, target_column_data_type, target_column_desc, target_column_order, target_cdc_key, target_cdc_compare, target_trans_logic, target_partition_column, target_mask_indicator, target_pk, target_pi, target_column_constraint) VALUES (530, 1, 'Risk_Metric_Identifier', 'string', NULL, 1, 0, 0, NULL, 0, 0, NULL, NULL), (530, 2, 'Risk_Metric_Reference_Identifier', 'int', NULL, 2, 0, 0, NULL, 0, 0, NULL, NULL),
+INSERT INTO data_services_ethancollins.target_object_columns (target_object_id, target_object_col_id, target_column_name, target_column_data_type, target_column_desc, target_column_order, target_cdc_key, target_cdc_compare, target_trans_logic, target_partition_column, target_mask_indicator, target_pk, target_pi, target_column_constraint) 
+VALUES (530, 1, 'Risk_Metric_Identifier', 'string', NULL, 1, 0, 0, NULL, 0, 0, NULL, NULL), 
+(530, 2, 'Risk_Metric_Reference_Identifier', 'int', NULL, 2, 0, 0, NULL, 0, 0, NULL, NULL),
 (530, 3, 'Risk_Metric_Code', 'string', NULL, 3, 0, 0, NULL, 0, 0, NULL, NULL),
 (530, 4, 'Risk_Metric_Description', 'string', NULL, 4, 0, 0, NULL, 0, 0, NULL, NULL),
 (530, 5, 'Metric_Data_Type', 'string', NULL, 5, 0, 0, NULL, 0, 0, NULL, NULL),
