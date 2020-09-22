@@ -54,7 +54,7 @@ VALUES (530, 1, 'Risk_Metric_Identifier', 'string', '', 1, 0, 0, NULL, 0, 0, NUL
 (530, 13, 'Risk_Lower_Threshold', 'float', '', 13, 0, 0, NULL, 0, 0, NULL, NULL, NULL),
 (530, 14, 'Risk_Upper_Threshold', 'float', '', 14, 0, 0, NULL, 0, 0, NULL, NULL, NULL),
 (530, 15, 'Reporting_Month_End_Date', 'date', '', 15, 0, 0, NULL, 0, 0, NULL, NULL, NULL),
-(530, 16, 'Metric_Cadence', 'string', '', 16, 0, 0, NULL, 0, 0, NULL, NULL),
+(530, 16, 'Metric_Cadence', 'string', '', 16, 0, 0, NULL, 0, 0, NULL, NULL, NULL),
 (530, 17, 'Metric_Reporting_Start_Timestamp', 'timestamp', '', 17, 0, 0, NULL, 0, 0, NULL, NULL, NULL),
 (530, 18, 'Metric_Reporting_End_Timestamp', 'timestamp', '', 18, 0, 0, NULL, 0, 0, NULL, NULL, NULL),
 (530, 19, 'Metric_Audience', 'string', '', 19, 0, 0, NULL, 0, 0, NULL, NULL, NULL),
