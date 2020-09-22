@@ -1,0 +1,4 @@
+first_metric,1,first_metric_1,first metric,Percentage,Temp Entity,0.7,9/22/2020,5.4,4/1/2020,1.2,3.00,4/1/2023,ARC,ProcessAreaString,ProcessString,FirstSystem,create a timestamp here,1,first_batch
+second_metric,2,second_metric_2,second metric,Number,Temp Entity,,9/22/2020,5.4,6/1/2020,,,8/1/2023,ARC,ProcessAreaString,ProcessString,FirstSystem,create a timestamp here,1,first_batch
+third_metric,3,third_metric_3,third metric,Percentage,Temp Entity,0.4,9/22/2020,5.4,7/1/2020,0.8,3.00,2/1/2021,ARC,ProcessAreaString,ProcessString,FirstSystem,create a timestamp here,1,first_batch
+fourth_metric,4,fourth_metric_4,fourth metric,Number,Temp Entity,,9/22/2020,5.4,9/4/2020,,,8/4/2021,ARC,ProcessAreaString,ProcessString,FirstSystem,create a timestamp here,1,first_batch
