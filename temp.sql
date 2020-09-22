@@ -1,4 +1,3 @@
-
 INSERT INTO data_services_ethancollins.source_object
 (source_object_id, object_type_id, source_object_name, source_local_file_path, source_file_name, source_file_type, source_hdfs_file_path, source_database, source_schema, source_bucket_name, source_bucket_folder, source_column_delimiter, source_object_connect, source_object_type, source_object_username, source_object_mappers, source_serde, source_header_line_count, source_footer_line_count, source_encoding, source_split_by_field, source_where_clause, transformed_query)
 VALUES(53, 1, 'emr_kpi_metrics', '/devup/training', 'emr_kpi_metrics_20200922.csv', 'delimited', '/user/ethancollins/practice', 'ethancollins_raw_temp', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 0, NULL, NULL, NULL, NULL);
@@ -39,10 +38,7 @@ INSERT INTO data_services_ethancollins.target_object
 VALUES(530, 1, 'ENT_NFRR_INFO_RISK_METRIC', NULL, 'parquet', NULL, '/user/ethancollins/practice', 'ethancollins_raw_zone', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
 
 
-INSERT INTO data_services_ethancollins.target_object_columns
-(target_object_id, target_object_col_id, target_column_name, target_column_data_type, target_column_desc, target_column_order, target_cdc_key, target_cdc_compare, target_trans_logic, target_partition_column, target_mask_indicator, target_pk, target_pi, target_column_constraint)
-VALUES (530, 1, 'Risk_Metric_Identifier', 'string', NULL, 1, 0, 0, NULL, 0, 0, NULL, NULL),
-(530, 2, 'Risk_Metric_Reference_Identifier', 'int', NULL, 2, 0, 0, NULL, 0, 0, NULL, NULL),
+INSERT INTO data_services_ethancollins.target_object_columns (target_object_id, target_object_col_id, target_column_name, target_column_data_type, target_column_desc, target_column_order, target_cdc_key, target_cdc_compare, target_trans_logic, target_partition_column, target_mask_indicator, target_pk, target_pi, target_column_constraint) VALUES (530, 1, 'Risk_Metric_Identifier', 'string', NULL, 1, 0, 0, NULL, 0, 0, NULL, NULL), (530, 2, 'Risk_Metric_Reference_Identifier', 'int', NULL, 2, 0, 0, NULL, 0, 0, NULL, NULL),
 (530, 3, 'Risk_Metric_Code', 'string', NULL, 3, 0, 0, NULL, 0, 0, NULL, NULL),
 (530, 4, 'Risk_Metric_Description', 'string', NULL, 4, 0, 0, NULL, 0, 0, NULL, NULL),
 (530, 5, 'Metric_Data_Type', 'string', NULL, 5, 0, 0, NULL, 0, 0, NULL, NULL),
@@ -53,7 +49,7 @@ VALUES (530, 1, 'Risk_Metric_Identifier', 'string', NULL, 1, 0, 0, NULL, 0, 0, N
 (530, 10, 'Metric_Volume_Count', 'float', NULL, 10, 0, 0, NULL, 0, 0, NULL, NULL),
 (530, 11, 'Metric_Population_Count', 'float', NULL, 11, 0, 0, NULL, 0, 0, NULL, NULL),
 (530, 12, 'Target_Mitigation_Date', 'date', NULL, 12, 0, 0, NULL, 0, 0, NULL, NULL),
-(530, 13, 'Risk_Lower_Threshold, 'float', NULL, 13, 0, 0, NULL, 0, 0, NULL, NULL),
+(530, 13, 'Risk_Lower_Threshold', 'float', NULL, 13, 0, 0, NULL, 0, 0, NULL, NULL),
 (530, 14, 'Risk_Upper_Threshold', 'float', NULL, 14, 0, 0, NULL, 0, 0, NULL, NULL),
 (530, 15, 'Reporting_Month_End_Date', 'date', NULL, 15, 0, 0, NULL, 0, 0, NULL, NULL),
 (530, 16, 'Metric_Cadence', 'string', NULL, 16, 0, 0, NULL, 0, 0, NULL, NULL),
