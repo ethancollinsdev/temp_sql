@@ -37,8 +37,8 @@ INSERT INTO data_services_ethancollins.target_object
 (target_object_id, object_type_id, target_object_name, target_file_name, target_file_type, target_local_file_path, target_hdfs_file_path, target_database, target_schema, target_bucket_name, target_bucket_folder, target_column_delimiter, target_object_connect, target_object_type, target_object_username, target_object_mappers, target_object_ext_tbl_ind, target_header_line_count, target_footer_line_count, target_encoding, target_serde, is_bucketed, bucket_col_name, no_of_buckets, is_hashed, cdc_dim_dt)
 VALUES(530, 1, 'ENT_NFRR_INFO_RISK_METRIC', NULL, 'parquet', NULL, '/user/ethancollins/practice', 'ethancollins_raw_zone', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
 
-
-INSERT INTO data_services_ethancollins.target_object_columns (target_object_id, target_object_col_id, target_column_name, target_column_data_type, target_column_desc, target_column_order, target_cdc_key, target_cdc_compare, target_trans_logic, target_partition_column, target_mask_indicator, target_pk, target_pi, target_column_constraint) 
+INSERT INTO data_services_ethancollins.target_object_columns
+(target_object_id, target_object_col_id, target_column_name, target_column_data_type, target_column_desc, target_column_order, target_cdc_key, target_cdc_compare, target_trans_logic, target_partition_column, target_mask_indicator, target_pk, target_pi, target_column_constraint)
 VALUES (530, 1, 'Risk_Metric_Identifier', 'string', '', 1, 0, 0, NULL, 0, 0, NULL, NULL, NULL), 
 (530, 2, 'Risk_Metric_Reference_Identifier', 'int', '', 2, 0, 0, NULL, 0, 0, NULL, NULL, NULL),
 (530, 3, 'Risk_Metric_Code', 'string', '', 3, 0, 0, NULL, 0, 0, NULL, NULL, NULL),
