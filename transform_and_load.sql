@@ -69,7 +69,7 @@ SELECT
     KPIDescription,
     DataType,
     Entity,
-    (ISNULL(MetricPercentage, 0) * 100),
+    "value" = CASE WHEN DataType="Percentage" THEN (100 * MetricPercentage) ELSE 0 END,
     AsOfDate,
     MetricVolume,
     MetricPopulation,
