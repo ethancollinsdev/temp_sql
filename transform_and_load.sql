@@ -87,8 +87,8 @@ SELECT
     "value2" = CASE WHEN Line = "FLOD" THEN "Y" WHEN Line = "SLOD" THEN "Y" WHEN Line = "TLOD" THEN "Y" ELSE Line END,
     "value3" = CASE WHEN Line = "FLOD" THEN "Y" WHEN Line = "SLOD" THEN "Y" WHEN Line = "TLOD" THEN "Y" ELSE Line END,
     CurrentKPIScore,
-    ISNULL(Source_System_Code, "EMR"),
-    TIMESTAMP(),
+    COALESCE(Source_System_Code, "EMR"),
+    CURRENT_TIMESTAMP,
     1,
     "Batch1"
 FROM
