@@ -30,7 +30,6 @@ INSERT INTO
     Batch_Process_Name
   )
 SELECT
-  (
     RiskMetricID,
     KPIMetricsReferenceID,
     KPIMetricsCode,
@@ -59,6 +58,5 @@ SELECT
     Create_Timestamp,
     Batch_ID,
     Batch_Process_Name
-  )
 FROM
   ethancollins_raw_temp.emr_kpi_metrics;;
