@@ -48,21 +48,21 @@ DateEndTime,
 MetricAudience,
 ProcessArea,
 Process,
-CASE
+(CASE
     WHEN Line = 'FLOD' THEN 'Y'
     WHEN Line = 'SLOD' THEN 'Y'
     WHEN Line = 'TLOD' THEN 'Y'
-END,
-CASE
+END) as value1,
+(CASE
     WHEN Line = 'FLOD' THEN 'Y'
     WHEN Line = 'SLOD' THEN 'Y'
     WHEN Line = 'TLOD' THEN 'Y'
-END,
-CASE
+END) as value2,
+(CASE
     WHEN Line = 'FLOD' THEN 'Y'
     WHEN Line = 'SLOD' THEN 'Y'
     WHEN Line = 'TLOD' THEN 'Y'
-END,
+END) as value3,
 CurrentKPIScore,
 Source_System_Code,
 Create_Timestamp,
