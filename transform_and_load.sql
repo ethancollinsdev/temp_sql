@@ -61,4 +61,4 @@ SELECT
     Batch_Process_Name
   )
 FROM
-  ethancollins_raw_temp;;
+  ethancollins_raw_temp.emr_kpi_metrics;;
