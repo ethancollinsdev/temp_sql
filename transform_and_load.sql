@@ -19,9 +19,9 @@ Metric_Reporting_End_Timestamp,
 Metric_Audience,
 Process_Area_Name,
 Process_Name,
-First_Line_of_Defense_Indicator,
-Second_Line_of_Defense_Indicator,
-Third_Line_of_Defense_Indicator,
+value1,
+value2,
+value3,
 Metric_Score,
 Source_System_Code,
 Create_Timestamp,
@@ -49,19 +49,22 @@ MetricAudience,
 ProcessArea,
 Process,
 (CASE
-    WHEN Line = 'FLOD' THEN 'Y'
-    WHEN Line = 'SLOD' THEN 'Y'
-    WHEN Line = 'TLOD' THEN 'Y'
+    WHEN Line = "FLOD" THEN "Y"
+    WHEN Line = "SLOD" THEN "Y"
+    WHEN Line = "TLOD" THEN "Y"
+    ELSE Line
 END) as value1,
 (CASE
-    WHEN Line = 'FLOD' THEN 'Y'
-    WHEN Line = 'SLOD' THEN 'Y'
-    WHEN Line = 'TLOD' THEN 'Y'
+    WHEN Line = "FLOD" THEN "Y"
+    WHEN Line = "SLOD" THEN "Y"
+    WHEN Line = "TLOD" THEN "Y"
+    ELSE Line
 END) as value2,
 (CASE
-    WHEN Line = 'FLOD' THEN 'Y'
-    WHEN Line = 'SLOD' THEN 'Y'
-    WHEN Line = 'TLOD' THEN 'Y'
+    WHEN Line = "FLOD" THEN "Y"
+    WHEN Line = "SLOD" THEN "Y"
+    WHEN Line = "TLOD" THEN "Y"
+    ELSE Line
 END) as value3,
 CurrentKPIScore,
 Source_System_Code,
