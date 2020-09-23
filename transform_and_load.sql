@@ -64,11 +64,11 @@ INSERT INTO
   )
 SELECT
     coalesce(RiskMetricID,0),
-    KPIMetricsReferenceID,
-    KPIMetricsCode,
-    KPIDescription,
-    DataType,
-    Entity,
+    coalesce(KPIMetricsReferenceID, "0"),
+    coalesce(KPIMetricsCode, "default_metric_code_0"),
+    coalesce(KPIDescription, "default description"),
+    coalesce(DataType, "Number"),
+    coalesce(Entity, "Default Entity"),
     "value" = CASE WHEN DataType="Percentage" THEN (100 * MetricPercentage) ELSE 0 END,
     AsOfDate,
     MetricVolume,
