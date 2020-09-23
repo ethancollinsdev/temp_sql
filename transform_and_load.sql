@@ -52,17 +52,17 @@ CASE
     WHEN Line = 'FLOD' THEN 'Y'
     WHEN Line = 'SLOD' THEN 'Y'
     WHEN Line = 'TLOD' THEN 'Y'
-END AS LineValue,
+END,
 CASE
     WHEN Line = 'FLOD' THEN 'Y'
     WHEN Line = 'SLOD' THEN 'Y'
     WHEN Line = 'TLOD' THEN 'Y'
-END AS LineValue,
+END,
 CASE
     WHEN Line = 'FLOD' THEN 'Y'
     WHEN Line = 'SLOD' THEN 'Y'
     WHEN Line = 'TLOD' THEN 'Y'
-END AS LineValue,
+END,
 CurrentKPIScore,
 Source_System_Code,
 Create_Timestamp,
