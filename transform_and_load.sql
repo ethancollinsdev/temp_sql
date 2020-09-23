@@ -69,7 +69,7 @@ SELECT
     KPIDescription,
     DataType,
     Entity,
-    (MetricPercentage * 100),
+    (IFNULL(MetricPercentage, 0) * 100),
     AsOfDate,
     MetricVolume,
     MetricPopulation,
@@ -87,9 +87,9 @@ SELECT
     "value2" = CASE WHEN Line = "FLOD" THEN "Y" WHEN Line = "SLOD" THEN "Y" WHEN Line = "TLOD" THEN "Y" ELSE Line END,
     "value3" = CASE WHEN Line = "FLOD" THEN "Y" WHEN Line = "SLOD" THEN "Y" WHEN Line = "TLOD" THEN "Y" ELSE Line END,
     CurrentKPIScore,
-    Source_System_Code,
-    Create_Timestamp,
-    Batch_ID,
-    Batch_Process_Name
+    IFNULL(Source_System_Code, "EMR"),
+    TIMESTAMP(),
+    1,
+    "Batch1"
 FROM
   ethancollins_raw_temp.emr_kpi_metrics;;
