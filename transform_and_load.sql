@@ -69,7 +69,7 @@ SELECT
     KPIDescription,
     DataType,
     Entity,
-    (IFNULL(MetricPercentage, 0) * 100),
+    (ISNULL(MetricPercentage, 0) * 100),
     AsOfDate,
     MetricVolume,
     MetricPopulation,
@@ -87,7 +87,7 @@ SELECT
     "value2" = CASE WHEN Line = "FLOD" THEN "Y" WHEN Line = "SLOD" THEN "Y" WHEN Line = "TLOD" THEN "Y" ELSE Line END,
     "value3" = CASE WHEN Line = "FLOD" THEN "Y" WHEN Line = "SLOD" THEN "Y" WHEN Line = "TLOD" THEN "Y" ELSE Line END,
     CurrentKPIScore,
-    IFNULL(Source_System_Code, "EMR"),
+    ISNULL(Source_System_Code, "EMR"),
     TIMESTAMP(),
     1,
     "Batch1"
