@@ -63,7 +63,7 @@ INSERT INTO
     Batch_Process_Name
   )
 SELECT
-    RiskMetricID,
+    coalesce(RiskMetricID,0),
     KPIMetricsReferenceID,
     KPIMetricsCode,
     KPIDescription,
