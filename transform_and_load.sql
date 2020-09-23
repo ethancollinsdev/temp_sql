@@ -27,7 +27,7 @@ Source_System_Code,
 Create_Timestamp,
 Batch_Identifier,
 Batch_Process_Name)
-SELECT ethancollins_raw_temp 
+SELECT
 (RiskMetricID,
 KPIMetricsReferenceID,
 KPIMetricsCode,
@@ -70,4 +70,5 @@ CurrentKPIScore,
 Source_System_Code,
 Create_Timestamp,
 Batch_ID,
-Batch_Process_Name);
+Batch_Process_Name) 
+FROM  ethancollins_raw_temp;;
