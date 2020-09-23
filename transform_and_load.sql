@@ -67,4 +67,4 @@ CurrentKPIScore,
 Source_System_Code,
 Create_Timestamp,
 Batch_ID,
-Batch_Process_Name)
+Batch_Process_Name);
