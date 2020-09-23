@@ -1,3 +1,36 @@
+DROP TABLE IF EXISTS ethancollins_raw_zone.ent_nfrr_info_risk_metric;
+
+CREATE TABLE ethancollins_raw_zone.ENT_NFRR_INFO_RISK_METRIC (
+	Risk_Metric_Identifier VARCHAR(50) NOT NULL,
+	Risk_Metric_Reference_Identifier NUMERIC NOT NULL,
+	Risk_Metric_Code VARCHAR(50) NOT NULL,
+	Risk_Metric_Description VARCHAR(500) NOT NULL,
+	Metric_Data_Type VARCHAR(25) NOT NULL,
+	Legal_Entity_Name VARCHAR(250) NOT NULL,
+	Metric_Volume_Percentage FLOAT,
+	As_of_Date DATE NOT NULL,
+	Metric_Volume_Count FLOAT,
+	Metric_Population_Count FLOAT,
+	Target_Mitigation_Date DATE NOT NULL,
+	Risk_Lower_Threshold FLOAT NOT NULL,
+	Risk_Upper_Threshold FLOAT NOT NULL,
+	Reporting_Month_End_Date DATE NOT NULL,
+	Metric_Cadence VARCHAR(250) NOT NULL,
+	Metric_Reporting_Start_Timestamp TIMESTAMP NOT NULL,
+	Metric_Reporting_End_Timestamp TIMESTAMP,
+	Metric_Audience VARCHAR(25),
+	Process_Area_Name VARCHAR(100) NOT NULL,
+	Process_Name VARCHAR(100) NOT NULL,
+	First_Line_of_Defense_Indicator CHAR(1) NOT NULL,
+	Second_Line_of_Defense_Indicator CHAR(1) NOT NULL,
+	Third_Line_of_Defense_Indicator CHAR(1) NOT NULL,
+	Metric_Score NUMERIC,
+	Source_System_Code VARCHAR(50) NOT NULL,
+	Create_Timestamp TIMESTAMP NOT NULL,
+	Batch_Identifier NUMERIC NOT NULL,
+	Batch_Process_Name VARCHAR(100) NOT NULL
+);
+
 INSERT INTO
   ethancollins_raw_zone.ent_nfrr_info_risk_metric (
     Risk_Metric_Identifier,
